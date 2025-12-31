@@ -14,22 +14,22 @@ cask "gctx" do
   on_macos do
     on_intel do
       url "https://github.com/k0wl0n/gctx/releases/download/v#{version}/gctx-#{version}-darwin-amd64.tar.gz"
-      sha256 "54957e519e3055047ded6407f916134e445a47f7c8923caf864352a954e61616"
+      sha256 "0ccc4c571d4d5c9e68567b02f6d3c55cdb344134296b8e3e789f1c4ac08fcae6"
     end
     on_arm do
       url "https://github.com/k0wl0n/gctx/releases/download/v#{version}/gctx-#{version}-darwin-arm64.tar.gz"
-      sha256 "4135fa7d45aa84a527ad2dfe5c424b5e38f15d62f824f9aa61e890b553e1e7f1"
+      sha256 "2e41f4a5309f721d6e1d091bce4927f5cf7eb5bc540ec6790640863f984dd73b"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/k0wl0n/gctx/releases/download/v#{version}/gctx-#{version}-linux-amd64.tar.gz"
-      sha256 "61a45cb7a79b44e23bc7f3868a512742a205366a02869433334d4ace6e70a7ad"
+      sha256 "5d90f8e5795f87fed11ce621b8e6e5443aad9d5d0ff050ffe0e065f6c3695849"
     end
     on_arm do
       url "https://github.com/k0wl0n/gctx/releases/download/v#{version}/gctx-#{version}-linux-arm64.tar.gz"
-      sha256 "931a644ceefd2695003db6e212a4109c7bbf947be600de9d28e57c3aed1011d6"
+      sha256 "ff45f8705bac6e686e57b274ffc4f9c7aa3c52b10da82f083ede9f2db796ebd3"
     end
   end
 
