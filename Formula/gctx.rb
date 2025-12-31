@@ -5,21 +5,21 @@
 class Gctx < Formula
   desc "GCloud Multi-Account Manager (Go + Cobra)"
   homepage "https://github.com/k0wl0n/gctx"
-  version "0.2.3"
+  version "0.2.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/k0wl0n/gctx/releases/download/v0.2.3/gctx-0.2.3-darwin-amd64.tar.gz"
-      sha256 "49f561882f475e6364222a24cd5595172700e81eb2fbedbbf31a7b631e13187c"
+      url "https://github.com/k0wl0n/gctx/releases/download/v0.2.4/gctx-0.2.4-darwin-amd64.tar.gz"
+      sha256 "faf631e930772b9dd3c04e6d580a86808910dcf60a599519e7c6cc9a2b84d254"
 
       def install
         bin.install "gctx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/k0wl0n/gctx/releases/download/v0.2.3/gctx-0.2.3-darwin-arm64.tar.gz"
-      sha256 "86203e149a3887946463095b2e8bfe4cdb7406037b22eb808028432e84eae964"
+      url "https://github.com/k0wl0n/gctx/releases/download/v0.2.4/gctx-0.2.4-darwin-arm64.tar.gz"
+      sha256 "842b1eb679091b440737bb03816a361372c67abc5d1f56ad510ae54af3f74805"
 
       def install
         bin.install "gctx"
@@ -29,15 +29,15 @@ class Gctx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/k0wl0n/gctx/releases/download/v0.2.3/gctx-0.2.3-linux-amd64.tar.gz"
-      sha256 "9ef902163d64d30973fcce3b13c733a7c30fa3a35f485d50cfde121625d86c0c"
+      url "https://github.com/k0wl0n/gctx/releases/download/v0.2.4/gctx-0.2.4-linux-amd64.tar.gz"
+      sha256 "0c2a950bfa6860c750c36bed04cc5f8b334a8e26072a255317f8838c24cc53f3"
       def install
         bin.install "gctx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/k0wl0n/gctx/releases/download/v0.2.3/gctx-0.2.3-linux-arm64.tar.gz"
-      sha256 "a01d757546a55e8559711c1706d104c1b70b258006f1f55afe48c05ff7cbab01"
+      url "https://github.com/k0wl0n/gctx/releases/download/v0.2.4/gctx-0.2.4-linux-arm64.tar.gz"
+      sha256 "b30d2c4a016e2d0587f5b2616ecc7a806a972c8e67fec7923d508ca57c8eb473"
       def install
         bin.install "gctx"
       end
