@@ -5,21 +5,21 @@
 class Gctx < Formula
   desc "GCloud Multi-Account Manager (Go + Cobra)"
   homepage "https://github.com/k0wl0n/gctx"
-  version "0.5.2"
+  version "0.5.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/k0wl0n/gctx/releases/download/v0.5.2/gctx-0.5.2-darwin-amd64.tar.gz"
-      sha256 "36d4a03c735bb8755731f77aa33d26c0fc772c32afdd35238ad50cce60631dc9"
+      url "https://github.com/k0wl0n/gctx/releases/download/v0.5.3/gctx-0.5.3-darwin-amd64.tar.gz"
+      sha256 "17069a7ffda464fac197e5570210d81a7caeb7c78cb11bbef717e24bccefc3d9"
 
       define_method(:install) do
         bin.install "gctx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/k0wl0n/gctx/releases/download/v0.5.2/gctx-0.5.2-darwin-arm64.tar.gz"
-      sha256 "045e6d2f66ce1f814133bf7f2c72992c9ddeceb1f2198f20a23cbc2943a02554"
+      url "https://github.com/k0wl0n/gctx/releases/download/v0.5.3/gctx-0.5.3-darwin-arm64.tar.gz"
+      sha256 "54dae0e7f58dfe2980108c2a0dbe0fe64bddba64141ea11cde66d82b9c6cc080"
 
       define_method(:install) do
         bin.install "gctx"
@@ -29,15 +29,15 @@ class Gctx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/k0wl0n/gctx/releases/download/v0.5.2/gctx-0.5.2-linux-amd64.tar.gz"
-      sha256 "edf217b7a29dc885b99dc67129b6fc050c11ada66c6eafbf80f9660c938e0116"
+      url "https://github.com/k0wl0n/gctx/releases/download/v0.5.3/gctx-0.5.3-linux-amd64.tar.gz"
+      sha256 "b8ffe82a65be67cf5ef5c82d6a298a5d06c35bffb4caad4760407b7b9fecbb48"
       define_method(:install) do
         bin.install "gctx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/k0wl0n/gctx/releases/download/v0.5.2/gctx-0.5.2-linux-arm64.tar.gz"
-      sha256 "3f8df51e15c92b9b9bf9480c1a4bdcf47ccc57e2f7b5214fb12876270f8278bb"
+      url "https://github.com/k0wl0n/gctx/releases/download/v0.5.3/gctx-0.5.3-linux-arm64.tar.gz"
+      sha256 "57bd0e52e50b9e2ae24507e86b56c928cf24e6122bf2fdf46a56d71ce46a2a67"
       define_method(:install) do
         bin.install "gctx"
       end
